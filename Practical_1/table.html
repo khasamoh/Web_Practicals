@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table,th,td{border: 1px solid black;}
+        table{
+            height: 200px;
+        }
+        thead{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerP">
+        <table align="center">
+            <thead>
+                <th colspan="4">Tabale Heading Cell Spanning 4 Columns</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Normal cell</td>
+                    <td colspan="2">Cell Spanning 2 Columns</td>
+                    <td>Normal cell</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="background-color: gray;">Cell Spanning 3 <br> with a gray<br> (US spelling) <br>background</td>
+                    <td>Normal cell</td>
+                    <td>Normal cell</td>
+                    <td>Normal cell</td>
+                </tr>
+                <tr>
+                    <td>Normal cell</td>
+                    <td rowspan="2" colspan="2">Cell Spanning 2 rows and 2 Columns</td>
+                </tr>
+                <tr>
+                    <td>Normal cell</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

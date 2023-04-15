@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+}
+.containerP{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(247, 244, 241);
+}
