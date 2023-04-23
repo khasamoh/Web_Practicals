@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK1</title>
+    <style>
+        img{
+            width: 33%;
+            height: 300px;
+        }
+    </style>
+    <script>
+        /*
+        // First way
+        document.addEventListener('DOMContentLoaded',function(){
+			document.querySelectorAll('img').forEach(function(img){
+                img.src = "https://media.giphy.com/media/jaqvaWqpKfImQ/giphy.gif"
+            });
+		});
+
+        document.addEventListener('DOMContentLoaded',()=>{
+			document.querySelectorAll('img').forEach((img)=>{
+                img.src = "https://media.giphy.com/media/jaqvaWqpKfImQ/giphy.gif"
+            });
+		});
+        */
+        // Second way
+        function setImgSrc() {
+            const img = document.querySelectorAll("img");
+            img.forEach((img) => {
+                img.src = "https://media.giphy.com/media/jaqvaWqpKfImQ/giphy.gif";
+            });
+          }
+    </script>
+</head>
+<body onload="setImgSrc();">
+    <img src="" >
+    <img src="" >
+    <img src="" >
+</body>
+</html>

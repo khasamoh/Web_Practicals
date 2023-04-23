@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 2</title>
+    <script>
+        // First way
+        /*
+        document.addEventListener('DOMContentLoaded',function(){
+			document.querySelectorAll('p').forEach(function(paragraph){
+                paragraph.textContent = paragraph.textContent.toUpperCase();
+            });
+		});
+
+        document.addEventListener('DOMContentLoaded',()=>{
+			document.querySelectorAll('p').forEach((paragraph)=>{
+                paragraph.textContent = paragraph.textContent.toUpperCase();
+            });
+		});
+        */
+         // Second way
+        function capitalParagraphs() {
+            const paragraphs = document.querySelectorAll("p");
+            paragraphs.forEach((paragraph) => {
+              paragraph.textContent = paragraph.textContent.toUpperCase();
+            });
+          }
+    </script>
+</head>
+<body onload="capitalParagraphs();">
+    <p> Write a function that selects all paragraphs on the webpage and capitalizes their text. DOM objects have a textContent property that you can access to get the text in the element, or set to change the text. 
+        Hint: Use document.querySelectorAll to get an array of DOM objects. Also, strings have a toUpperCase function that returns the string in all caps.</p>
+    <p> Write a function that selects all paragraphs on the webpage and capitalizes their text. DOM objects have a textContent property that you can access to get the text in the element, or set to change the text. 
+        Hint: Use document.querySelectorAll to get an array of DOM objects. Also, strings have a toUpperCase function that returns the string in all caps.</p>
+    <p> Write a function that selects all paragraphs on the webpage and capitalizes their text. DOM objects have a textContent property that you can access to get the text in the element, or set to change the text. 
+        Hint: Use document.querySelectorAll to get an array of DOM objects. Also, strings have a toUpperCase function that returns the string in all caps.</p>
+    <p> Write a function that selects all paragraphs on the webpage and capitalizes their text. DOM objects have a textContent property that you can access to get the text in the element, or set to change the text. 
+        Hint: Use document.querySelectorAll to get an array of DOM objects. Also, strings have a toUpperCase function that returns the string in all caps.</p>
+    <p> Write a function that selects all paragraphs on the webpage and capitalizes their text. DOM objects have a textContent property that you can access to get the text in the element, or set to change the text. 
+        Hint: Use document.querySelectorAll to get an array of DOM objects. Also, strings have a toUpperCase function that returns the string in all caps.</p>
+</body>
+</html>
